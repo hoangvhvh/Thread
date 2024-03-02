@@ -11,28 +11,27 @@
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
         android:text="Tải về"
-        android:textSize="35sp"
+        android:textSize="27sp"
         android:backgroundTint="@color/black"
         android:onClick="Loading"/>
 
     <Button
         android:id="@+id/switchButton"
         android:padding="10dp"
-        android:layout_margin="65dp"
-        android:gravity="center_horizontal"
-        android:textSize="28sp"
+        android:layout_marginStart="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Chuyển trang Thread"
+        android:textSize="22sp"
+        android:layout_toEndOf="@id/btn"
         android:onClick="nextThread"/>
-
 
     <ImageView
         android:id="@+id/imgView"
-        android:layout_centerInParent="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
 
 </RelativeLayout>
